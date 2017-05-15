@@ -1,0 +1,9 @@
+<%= @grid %>
+<%= @start_time %>
+
+<form action="/answer" method="get">
+  <input type="text" name="word" placeholder="what is your question?">
+  <input type="hidden" name="start_time" value="<%= @start_time %>">
+  <input type="hidden" name="grid" value="<%=@grid%>">
+  <input type="submit">
+</form>
